@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="css/custom-search.css">
+        <link rel="stylesheet" href="js/lib/slider/css/slider.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="index.html">Wineexpense</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="#vinhos">Vinhos</a></li>
+              <li><a href="#conheca">Conhe&ccedil;a</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+	<ul class="breadcrumb"
+	  <li><a href="#">Home</a> <span class="divider">/</span></li>
+	  <li><a href="#">Busca</a> <span class="divider">/</span></li>
+	  <li class="active">"Vinhos EUA"</li>
+	</ul>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span2">
+          <div class="well sidebar-nav">
+          	<p class="nav-header">Refine sua busca<br>(3 resultados)</p>
+            <ul class="nav nav-list">
+              <li class="nav-header">Nome do Vinho</li>
+              <li><input class="input-medium search-query span12" type="text" /></li>
+              <li class="nav-header">Cor</li>
+			  <label class="checkbox"><input type="checkbox" value="cor" /><a>Todos</a></label>
+			  <label class="checkbox"><input type="checkbox" value="cor" /><a>Tinto (1)</a></label>
+			  <label class="checkbox"><input type="checkbox" value="cor" /><a>Ros&eacute; (1)</a></label>
+			  <label class="checkbox"><input type="checkbox" value="cor" /><a>Branco (1)</a></label>
+              <li class="nav-header">Pa&iacute;s</li>
+              <li>
+                <div class="btn-group">
+                  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">Estados Unidos <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Estados Unidos</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-header">Nota</li>
+              <li><div id="starSearch"></div></li>
+              <li class="nav-header">Pre&ccedil;o</li>
+              <li>
+            	<div class="span9"
+            	  id="priceSlider" type="text" value=""
+              	      data-slider-min="45" 
+               	      data-slider-max="80" 
+                 	  data-slider-value="[45, 80]">
+                </div>
+              </li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+        <div class="span9">
+          <table class="table table-condensed">
+          	<thead>
+          	  <tr>
+          	    <th>Vinho</th>
+          	    <th>Nota</th>
+          	    <th>Pre&ccedil;o</th>
+          	    <th>Pa&iacute;s de Origem</th>
+          	    <th>Variedade</th>
+          	    <th>Safra</th>
+          	  </tr>
+          	</thead>
+          	<tbody>
+          	  <tr class="vertical-aligned">
+          	    <td>
+          	      <div class="media">
+          	      <a class="pull-left" href="#">
+          	        <img class="media-object" src="img/wines/boxhead-wine.jpg" width="90" />
+          	      </a>
+          	      <div class="media-body" >
+          	        <h4 class="media-heading">Box Head</h4>
+          	        <p>Donec id elit non mi porta gravida at eget metus. </p>
+          	        <p><a class="btn" href="#">Ver detalhes &raquo;</a></p>
+          	      </div><!--/span-->
+          	      </div>
+          	    </td>
+          	    <td><div id="star1"></div></td>
+          	    <td><h2>R$ 79,90</h2></td>
+          	    <td>Estados Unidos</td>
+          	    <td>
+          	      <ul>
+          	        <li>Grenache</li>
+          	        <li>Mourvedre</li>
+          	        <li>Syrah/Shiraz</li>
+          	      </ul>
+          	    </td>
+          	    <td>2009</td>
+          	  </tr>
+          	  <tr class="vertical-aligned">
+          	    <td>
+          	      <div class="media">
+          	        <a class="pull-left" href="#">
+          	          <img class="media-object" src="img/wines/robinlee-wine.jpg" width="90" />
+          	        </a>
+          	        <div class="media-body">
+          	          <h4 class="media-heading">Robin & Lee</h4>
+          	          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          	          <p><a class="btn" href="#">Ver detalhes &raquo;</a></p>
+          	        </div><!--/span-->
+          	      </div><!--/row-->
+          	    </td>
+          	    <td><div id="star2"></div></td>
+          	    <td><h2>R$ 45,50</h2></td>
+          	    <td>Estados Unidos</td>
+          	    <td>
+          	      <ul>
+          	        <li>Syrah/Shiraz</li>
+          	      </ul>
+          	    </td>
+          	    <td>2011</td>
+          	  </tr>
+          	  <tr class="vertical-aligned">
+          	    <td>
+          	      <div class="media">
+          	        <a class="pull-left" href="#">
+          	          <img class="media-object" src="img/wines/fogmountain-wine.jpg" width="90" />
+          	        </a>
+          	        <div class="media-body">
+          	          <h4 class="media-heading">Fog Mountain</h4>
+          	          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          	          <p><a class="btn" href="#">Ver detalhes &raquo;</a></p>
+          	        </div><!--/span-->
+          	      </div><!--/row-->
+          	    </td>
+          	    <td><div id="star3"></div></td>
+          	    <td><h2>R$ 99,00</h2></td>
+          	    <td>Estados Unidos</td>
+          	    <td>
+          	      <ul>
+          	        <li>Syrah/Shiraz</li>
+          	      </ul>
+          	    </td>
+          	    <td>2011</td>
+          	  </tr>
+          	</tbody>
+          </table>
+          </div><!--/row-->
+        </div><!--/row-->
+        </div><!--/span-->
+      </div><!--/row-->
+        <div class="container marketing">
+          <hr class="featurette-divider">
+          <footer>
+            <p class="pull-right"><a href="#">Voltar ao topo</a></p>
+            <p>&copy; 2013 Wineexpense. &middot; <a href="#">Sobre</a> &middot; <a href="#">Termos de Privacidade</a></p>
+          </footer>
+        </div><!-- /.container -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script> window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>') </script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/lib/raty/jquery.raty.min.js"></script>
+        <script src="js/lib/slider/js/bootstrap-slider.js"></script>
+        <script type="text/javascript">
+          jQuery(document).ready(function() {
+          	$('.carousel').carousel('cycle');
+          	$('#star1').raty();
+          	$('#star2').raty();
+          	$('#star3').raty();
+          	$('#starSearch').raty();
+          	$('#priceSlider').slider({
+          	  formater: function(value) {
+          	    return 'R$ '+value;
+          	  }
+          	});
+          	$('#star1').raty({
+          	  'score' : 3, 
+          	  'readOnly' : true	
+          	});
+          	$('#star2').raty({
+          	  'score' : 1, 
+          	  'readOnly' : true	
+          	});
+          	$('#star3').raty({
+          	  'score' : 4, 
+          	  'readOnly' : true	
+          	});
+          });
+        </script>
+    </body>
+</html>
